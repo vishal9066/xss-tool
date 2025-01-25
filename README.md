@@ -24,7 +24,7 @@ Ensure you have Python 3.7 or higher installed.
 Clone the repository using:
 
 ```bash
-https://github.com/vishal9066/xss-tool.git
+git clone https://github.com/vishal9066/xss-tool.git
 cd xss-tool
 ```
 
