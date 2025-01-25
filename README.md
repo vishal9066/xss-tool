@@ -24,8 +24,8 @@ Ensure you have Python 3.7 or higher installed.
 Clone the repository using:
 
 ```bash
-git clone https://github.com/your-repo/xss-detection-tool.git
-cd xss-detection-tool
+https://github.com/vishal9066/xss-tool.git
+cd xss-tool
 ```
 
 Install dependencies using:
