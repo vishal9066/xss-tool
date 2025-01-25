@@ -119,7 +119,7 @@ python xss_tool.py -u https://example.com/page -p username --delay 10
 #### License
 Copyright (C) Vishal (vishalatinfosec@gmail.com)
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU General Public License v3.0 License.
 
 ---
 
