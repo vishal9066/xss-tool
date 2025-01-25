@@ -39,14 +39,13 @@ pip install requests beautifulsoup4
 To run the tool:
 
 ```bash
-python xss_tool.py -u <url> -p <parameters> [options]
+python xss_tool.py <url> -p <parameters> [options]
 ```
 
 ## Options
 
 | Option | Description | Default |
 |---|---|---|
-| `-u`, `--url` | Target URL to test for XSS vulnerabilities. Required. | N/A |
 | `-p`, `--params` | Parameters to test (e.g., `username email`). Required. | N/A |
 | `--method` | HTTP method to use (`GET` or `POST`). | `GET` |
 | `--wordlist` | Path to a custom XSS payload wordlist file. | None |
@@ -62,7 +61,7 @@ python xss_tool.py -u <url> -p <parameters> [options]
 1. Test a URL for XSS vulnerabilities:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username email
+python xss_tool.py https://example.com/page -p username email
 ```
 
 2. Reflection-Only Mode
@@ -70,7 +69,7 @@ python xss_tool.py -u https://example.com/page -p username email
 Only test for reflection of special characters:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username --reflection-only
+python xss_tool.py https://example.com/page -p username --reflection-only
 ```
 
 3. No-Reflection Mode
@@ -78,7 +77,7 @@ python xss_tool.py -u https://example.com/page -p username --reflection-only
 Skip reflection testing and only test for XSS vulnerabilities:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username --no-reflection
+python xss_tool.py https://example.com/page -p username --no-reflection
 ```
 
 4. Use a Custom Wordlist
@@ -86,7 +85,7 @@ python xss_tool.py -u https://example.com/page -p username --no-reflection
 Test with a custom list of XSS payloads:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username --wordlist payloads.txt
+python xss_tool.py https://example.com/page -p username --wordlist payloads.txt
 ```
 
 5. Test with POST Method
@@ -94,7 +93,7 @@ python xss_tool.py -u https://example.com/page -p username --wordlist payloads.t
 Test a URL using the POST method:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username --method POST
+python xss_tool.py https://example.com/page -p username --method POST
 ```
 
 6. Set a Custom Delay
@@ -102,7 +101,7 @@ python xss_tool.py -u https://example.com/page -p username --method POST
 Set a custom delay between requests:
 
 ```bash
-python xss_tool.py -u https://example.com/page -p username --delay 10
+python xss_tool.py https://example.com/page -p username --delay 10
 ```
 
 ### Notes
