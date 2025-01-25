@@ -106,13 +106,11 @@ python xss_tool.py -u https://example.com/page -p username --delay 10
 ```
 
 ### Notes
-**Reflection Testing:** The tool first tests for reflection of special characters. If reflection is detected, it proceeds to test XSS payloads (unless --reflection-only is specified).
-
-**Direct Links:** For GET requests, the tool generates direct links for vulnerable parameters.
-
-**Custom Payloads:** Provide a custom wordlist file with one payload per line for advanced testing.
-
-**Rate Limiting:** Use --delay to avoid server rate-limiting issues.
+- **POST Parameters:** For POST requests, XSS vulnerabilities are less common in the backend. If a payload is injected, manually check the application's UI (e.g., forms, input fields, or output pages) to verify if the payload is reflected or executed.
+- **Reflection Testing:** The tool first tests for reflection of special characters. If reflection is detected, it proceeds to test XSS payloads (unless `--reflection-only` is specified).
+- **Direct Links:** For `GET` requests, the tool generates direct links for vulnerable parameters.
+- **Custom Payloads:** Provide a custom wordlist file with one payload per line for advanced testing.
+- **Rate Limiting:** Use `--delay` to avoid server rate-limiting issues.
 
 ---
 
